@@ -1,4 +1,4 @@
-{
+	{
 	"name":"Example", 
 	"icon": null, 
 	"channels": 
@@ -94,8 +94,6 @@
 			}
 		],
 	"system_channel_id": "02",
-	"public_updates_channel_id": "02",
-	"rules_channel_id": "03",
 	"roles":
 		[
 			{
