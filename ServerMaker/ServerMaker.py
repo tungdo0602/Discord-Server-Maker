@@ -104,8 +104,6 @@ maker = requests.post('https://discord.com/api/v9/guilds', headers={'authorizati
 			}
 		],
 	"system_channel_id": "02",
-	"public_updates_channel_id": "02",
-	"rules_channel_id": "03",
 	"roles":
 		[
 			{
@@ -145,7 +143,7 @@ maker = requests.post('https://discord.com/api/v9/guilds', headers={'authorizati
 	"guild_template_code": null
 	}
 )
-#2TffvPucqHkN
+
 if maker.status_code == 201:
 	print("Successfully make server")
 else:
