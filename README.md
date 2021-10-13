@@ -41,6 +41,8 @@ Make discord server by Coding!
 "icon" - set role icon
 "unicode_emoji" - ???
 
+![Example](Image URL "Example")
+
 Example:
 ```json
 	{
