@@ -43,7 +43,7 @@ Example:
 ```json
 	{
 	"name":"Example", 
-	"icon": icon, 
+	"icon": null, 
 	"channels": 
 		[
 			{
