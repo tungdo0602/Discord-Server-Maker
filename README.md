@@ -42,7 +42,7 @@ Make discord server by Coding!
 #### "icon" - set role icon
 #### "unicode_emoji" - ???
 
-Example:
+# Example Code:
 ```json
 	{
 	"name":"Example", 
