@@ -6,6 +6,7 @@ Make discord server by Coding!
 # FAQ
 1. How can i get role permissons?
 - Open discord with chrome developer tool, go to network and click red circle to it turn to gray. make a new role and edit permisson that you want. Now click again to the circle go red and click "save" to save role permisson. And then click on the tab write server id and scroll down click copy permisson
+#### ![Image](https://github.com/tungdo0602/Discord-Server-Maker/blob/main/.github/1.png "example")
 
 # Documentation:
 ## I. Server system
@@ -40,8 +41,6 @@ Make discord server by Coding!
 "color" - set role color.
 "icon" - set role icon
 "unicode_emoji" - ???
-
-#### !(https://github.com/tungdo0602/Discord-Server-Maker/blob/main/.github/1.png "example")
 
 Example:
 ```json
