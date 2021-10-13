@@ -38,6 +38,8 @@ Make discord server by Coding!
 "hoist" - let role can be see at member list or not.
 "permissions" - set role permission.
 "color" - set role color.
+"icon" - set role icon
+"unicode_emoji" - ???
 
 Example:
 ```json
