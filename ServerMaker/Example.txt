@@ -1,6 +1,6 @@
 	{
 	"name":"Example", 
-	"icon": null, 
+	"icon": icon, 
 	"channels": 
 		[
 			{
