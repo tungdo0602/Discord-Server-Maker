@@ -6,11 +6,12 @@ true = True
 false = False
 
 token = ""
+icon = open("icons/StickbugGif.txt", "r").read()
 
 maker = requests.post('https://discord.com/api/v9/guilds', headers={'authorization': token}, json=
 	{
 	"name":"Example", 
-	"icon": null, 
+	"icon": icon, 
 	"channels": 
 		[
 			{
