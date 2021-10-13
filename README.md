@@ -9,19 +9,170 @@ Make discord server by Coding!
 
 # Documentation:
 ## I. Server system
+### Tag:
 #### "name" - name for the server.
 #### "icon" - set server icon (as base64 encode).
 #### "system_channel_id" - set the system default anouncements channel.
-#### "channels" - add channel into server
-#### "roles" - add roles into server
-#### 	"guild_template_code" - default discord template code
+#### "channels" - add channel into server.
+#### "roles" - add roles into server.
+#### 	"guild_template_code" - default discord template code.
 
-## II. Channel
+## II. Channel/Category
+### Tag:
+#### "name" - set name for the channel/category.
+#### "id" - set channel position in server (useful for category).
+#### "parent_id" set channel position in category (category need to set it as null).
+#### "type" - set channel type.
+
 ### - Channel Type:
 #### 1: Text channel
 #### 2: Voice Channel
 #### 4: Category
 
-### tag:
-#### "id" for channel position in server (useful for category)
-#### "parent_id" for channel position in category (category need to set it as null)
+
+## III. Roles
+### Tag:
+"id" - set role position.
+"name" - set role name.
+"mentionable" - let user mention that role or not.
+"hoist" - let role can be see at member list or not.
+"permissions" - set role permission.
+"color" - set role color.
+
+Example:
+```json
+	{
+	"name":"Example", 
+	"icon": icon, 
+	"channels": 
+		[
+			{
+			"id":"00", 
+			"parent_id": null, 
+			"name": "INFOMATION", 
+			"type": "4"
+			},
+
+			{
+			"id": "01", 
+			"parent_id": "00", 
+			"name": "welcome", 
+			"type": "0"
+			},
+
+			{
+			"id": "02", 
+			"parent_id": "00", 
+			"name": "announcements", 
+			"type": "0"
+			},
+
+			{"id": "03", 
+			"parent_id": "00", 
+			"name": "rules", 
+			"type": "0"
+			},
+
+			{
+			"id": "10", 
+			"parent_id": null, 
+			"name": "MAIN", 
+			"type": "4"
+			},
+
+			{
+			"id": "11", 
+			"parent_id": "10", 
+			"name": "general-chat", 
+			"type": "0"
+			},
+
+			{
+			"id": "12", 
+			"parent_id": "10", 
+			"name": "memes", 
+			"type": "0"
+			},
+
+			{
+			"id": "13",
+			"parent_id": "10",
+			"name": "commands",
+			"type": "0"
+			},
+
+			{
+			"id": "20",
+			"parent_id": null,
+			"name": "VOICE CHANNELS",
+			"type": "4"
+			},
+
+			{
+			"id": "21",
+			"parent_id": "10",
+			"name": "Voice Chat",
+			"type": "0"
+			},
+
+			{
+			"id": "22", 
+			"parent_id": "20",
+			"name": "Meeting Room 1",
+			"type": "2"
+			},
+
+			{
+			"id": "23",
+			"parent_id": "20",
+			"name": "Meeting Room 2",
+			"type": "2"
+			},
+
+			{
+			"id": "24",
+			"parent_id": "20",
+			"name": "Streaming",
+			"type": "2"
+			}
+		],
+	"system_channel_id": "02",
+	"roles":
+		[
+			{
+			"id": "00",
+			"name": "@everyone",
+			"permissions": "1071698660929"
+			},
+
+			{
+			"id": "03",
+			"name": "Admin",
+			"mentionable": false,
+			"hoist": true,
+			"permissions": "1090921693183",
+			"color": "0"
+			},
+
+			{
+			"id": "02",
+			"name": "Moderator",
+			"mentionable": true,
+			"hoist": true,
+			"permissions": "1089042120519",
+			"color": "11027200"
+			},
+
+			{
+			"id": "01",
+			"name": "Member",
+			"mentionable": true,
+			"hoist": true,
+			"permissions": "1071698534209",
+			"color": "2490112"
+			}
+
+		],
+	"guild_template_code": null
+	}
+```
